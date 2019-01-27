@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopr</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="Vendors/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="Vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="Vendors/css/ionicons.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <script src="Vendors/js/jquery-3.2.1.js"></script>
+    <script src="Vendors/js/tether.min.js"></script>
+    <script src="Vendors/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="wrapper">
+            <div id="header">
+                <div class="row no-gutters">
+                    <div class="col-sm-2">
+                        <div id="logo-section"><a href="#"><p>myShop</p></a></div>
+                    </div>
+                    <div class="col-sm-10">
+                        <div id="navigation-section">
+                            <ul id="navigation-list">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Mail us</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Our motive</a></li>
+                                <div class="clear"></div>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="col-xl-3">
+                        <div id="navigation-extension">
+                            <ul id="navigation-options">
+                                <li><a href="#" onclick="" data-toggle="tooltip" title="Search this site" data-placement="bottom"><i class="ion-ios-search"></i></a></li>
+                                <li><a href="#" onclick="" data-toggle="tooltip" title="See shopping cart" data-placement="bottom"><i class="ion-ios-cart-outline"></i></a></li>
+                                <li><a href="#" onclick="" data-toggle="tooltip" title="Chat with us" data-placement="bottom"><i class="ion-ios-chatboxes-outline"></i></a></li>
+                                <li><a href="#" onclick="" data-toggle="tooltip" title="User dashboard" data-placement="bottom"><i class="ion-ios-home-outline"></i></a></li>
+                                <div class="clear"></div>
+                            </ul>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+            
+            <div class="row no-gutters" id="categorywise-showcase">
+                <div class="col-xl-4">
+                    <div id="product-category">
+                        <h3>Product Category</h3>
+                        <ul id="category-list">
+                           <li class="dropdown"><a href="#" onclick="change_bg(0)">Books &amp; Audiobooks<i class="ion-ios-arrow-down"></i></a>
+                                <ul class="dropdown-content">
+                                    <li><a href="#">Books</a></li>
+                                    <li><a href="#">Children's Books</a></li>
+                                    <li><a href="#">Magazines</a></li>
+                                    <li><a href="#">Textbooks</a></li>
+                                    <li><a href="#">Audiobooks</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#" onclick="change_bg(1)">Movies, Music &amp; Games<i class="ion-ios-arrow-down"></i></a>
+                                <ul class="dropdown-content">
+                                    <li><a href="#">Movies &amp; TV</a></li>
+                                    <li><a href="#">Bluray</a></li>
+                                    <li><a href="#">CDs &amp; Vinyl</a></li>
+                                    <li><a href="#">Musical Instruments</a></li>
+                                    <li><a href="#">Video Games</a></li>
+                                    <li><a href="#">PC Gaming</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#" onclick="change_bg(2)">Electronics, Computers &amp; Office<i class="ion-ios-arrow-down"></i></a>
+                                <ul class="dropdown-content">
+                                    <li><a href="#">TV &amp; Video</a></li>
+                                    <li><a href="#">Home Audio &amp; Theater</a></li>
+                                    <li><a href="#">Camera, Photo &amp; Video</a></li>
+                                    <li><a href="#">Cell Phones &amp; Accessories</a></li>
+                                    <li><a href="#">Headphones</a></li>
+                                    <li><a href="#">Video Games</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#" onclick="change_bg(3)">Home, Garden &amp; Tools<i class="ion-ios-arrow-down"></i></a>
+                                <ul class="dropdown-content">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Kitchen &amp; Dining</a></li>
+                                    <li><a href="#">Bedding &amp; Bath</a></li>
+                                    <li><a href="#">Furniture</a></li>
+                                    <li><a href="#">Appliances</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" onclick="change_bg(4)">Beauty &amp; Health</a></li>
+                            <li class="dropdown"><a href="#" onclick="change_bg(5)">Toys, Kids &amp; Baby<i class="ion-ios-arrow-down"></i></a>
+                                <ul class="dropdown-content">
+                                    <li><a href="#">Toys &amp; Games</a></li>
+                                    <li><a href="#">Baby</a></li>
+                                    <li><a href="#">Video Games for Kids</a></li>
+                                    <li><a href="#">Kids Birthdays</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" onclick="change_bg(6)">Clothing, Shoes &amp; Jewelry</a></li>
+                            <li><a href="#" onclick="change_bg(7)">Sports &amp; Outdoors</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div  class="col-xl-8">
+                    <div id="showcase-section">
+                        <h3>Best products from selected departments</h3>
+                        <h4><i class="ion-ios-pulse-strong"></i> From movie department</h4>
+                        <div class="row">
+                           <div class="col-md-6 col-lg-3">
+                                <div class="each-item">
+                                    <a href="#"><img src="Resources/images/product_images/movies/allegiant.jpg"></a>
+                                    <p class="product-title">Allegiant</p>
+                                    <p class="product-price">20$</p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="each-item">
+                                    <a href="#"><img src="Resources/images/product_images/movies/allegiant.jpg"></a>
+                                    <p class="product-title">Allegiant</p>
+                                    <p class="product-price">20$</p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="clearfix visible-md"></div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="each-item">
+                                    <a href="#"><img src="Resources/images/product_images/movies/cosmopolis.jpg"></a>
+                                    <p class="product-title">Cosmopolis</p>
+                                    <p class="product-price">15$</p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="each-item">
+                                    <a href="#"><img src="Resources/images/product_images/movies/dark%20circles.jpg"></a>
+                                    <p class="product-title">Dark circles</p>
+                                    <p class="product-price">25$</p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4><i class="ion-ios-pulse-strong"></i> From electronics department</h4>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="each-item">
+                                    <a href="#"><img src="Resources/images/product_images/electronics/hp%20probook%20450%20g4.jpg"></a>
+                                    <p class="product-title">HP probook</p>
+                                    <p class="product-price">540$</p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="each-item">
+                                    <a href="#"><img src="Resources/images/product_images/electronics/oneplus%205.jpg"></a>
+                                    <p class="product-title">Oneplus 5</p>
+                                    <p class="product-price">400$</p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="clearfix visible-md"></div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="each-item">
+                                    <a href="#"><img src="Resources/images/product_images/electronics/sony%20a7r2.jpg"></a>
+                                    <p class="product-title">Sony a7 rII</p>
+                                    <p class="product-price">1300$</p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="each-item">
+                                    <a href="#"><img src="Resources/images/product_images/electronics/sony%20a7r2.jpg"></a>
+                                    <p class="product-title">Sony a7 rII</p>
+                                    <p class="product-price">1300$</p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4><i class="ion-ios-pulse-strong"></i> From clothing department</h4>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="each-item">
+                                    <a href="#"><img src="Resources/images/product_images/clothes/PU%20leather%20korean%20jacket.jpg"></a>
+                                    <p class="product-title">PU leather Korean jacket</p>
+                                    <p class="product-price">30$</p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="each-item">
+                                    <a href="#"><img src="Resources/images/product_images/clothes/PU%20leather%20korean%20jacket.jpg"></a>
+                                    <p class="product-title">PU leather Korean jacket</p>
+                                    <p class="product-price">30$</p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="clearfix visible-md"></div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="each-item">
+                                    <a href="#"><img src="Resources/images/product_images/clothes/Autumn%20mens%20long%20sleeve%20shirt.jpg"></a>
+                                    <p class="product-title">Autumn mens long sleeve shirt</p>
+                                    <p class="product-price">18$</p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="each-item">
+                                    <a href="#"><img src="Resources/images/product_images/clothes/summer%20casual%20pants.jpg"></a>
+                                    <p class="product-title">Summer casual pants</p>
+                                    <p class="product-price">15$</p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+        
+        // CAROUSEL CALL
+        
+        $('.carousel').carousel({
+            interval: 4000,
+            keyboard: true,
+            pause: "hover"
+        });
+        
+        // TOOLTIP
+        
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+        
+        // BACKGROUND CHANGING CODE
+        
+        function change_bg(num){
+            switch(num)
+            {
+                case 0: {
+                    $('#categorywise-showcase').css("background-image","linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('Resources/images/library-min.jpg')");
+                }
+                break;
+                case 1: {
+                    $('#categorywise-showcase').css("background-image","linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('Resources/images/movie-min.jpeg')");
+                }
+                break;
+                case 2: {
+                    $('#categorywise-showcase').css("background-image","linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('Resources/images/electronics-min.jpeg')");
+                }
+                break;
+                case 3: {
+                    $('#categorywise-showcase').css("background-image","linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('Resources/images/garden-min.jpeg')");
+                }
+                break;
+                case 4: {
+                    $('#categorywise-showcase').css("background-image","linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('Resources/images/electronics-min.jpeg')");
+                }
+                break;
+                case 5: {
+
+                }
+                break;
+                case 6: {
+
+                }
+            }
+        }
+        
+        // NAVIGATION DROPDOWN
+        
+        $('.dropdown>a>i').click(function(){
+            if($(this).hasClass('ion-ios-arrow-up')){
+                var target = $(this).parent().next();
+                $(target).css('max-height','0');
+                $(this).removeClass("ion-ios-arrow-up");
+                $(this).addClass("ion-ios-arrow-down");
+            }
+            else{
+                var target = $(this).parent().next();
+                $(target).css('max-height','600px');
+                $(this).removeClass("ion-ios-arrow-down");
+                $(this).addClass("ion-ios-arrow-up");
+            }
+            return false;
+        });
+    </script>
+</body>
+</html>
